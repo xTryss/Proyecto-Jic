@@ -35,7 +35,7 @@ const MapView = ({ reports }) => {
         const response = await fetch('/api/mapbox-token');
         const { token } = await response.json();
         
-        window.mapboxgl.accessToken = token || 'pk.eyJ1IjoiZXhhbXBsZXMiLCJhIjoiY2xvZ28zMWVvMDQ0eDJrcGRiZzU0bWl1biJ9.m4Vl4JzJZJZJZJZJZJZJZA';
+        window.mapboxgl.accessToken = token || 'sk.eyJ1IjoiY3JpczMwIiwiYSI6ImNtYXBsZ2FsNDBqZWoyanBxdXRvbWltbmUifQ.qdrj67LjTh_Ee6fH14Eufg';
 
         const newMap = new window.mapboxgl.Map({
           container: mapContainer.current,
